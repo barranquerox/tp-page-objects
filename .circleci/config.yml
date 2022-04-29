@@ -15,7 +15,17 @@ jobs:
       - run:
           name: "Check python version"
           command: python --version
-      
+
+      - run:
+          name: "Switch to Python v3.10"
+          command: |
+            pyenv versions
+            pyenv global 3.10.2
+
+      - run:
+          name: "Check python version"
+          command: python --version
+
       - run:
           name: "Install selenium"
           command: pip install selenium
