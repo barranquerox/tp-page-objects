@@ -13,6 +13,10 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "Check python version"
+          command: python --version
+      
+      - run:
           name: "Install selenium"
           command: pip install selenium
 
