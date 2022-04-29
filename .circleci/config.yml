@@ -17,6 +17,10 @@ jobs:
           command: python --version
 
       - run:
+          name: "Check python3 version"
+          command: python3 --version
+
+      - run:
           name: "Switch to Python v3.10"
           command: |
             pyenv versions
